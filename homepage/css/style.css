@@ -67,7 +67,7 @@ body {
           color: #60606e; }
       body .ph-header .container .ph-header-info {
         margin: 150px auto 100px auto;
-        width: 80%;
+        width: 85%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -80,14 +80,16 @@ body {
           font-weight: 700;
           text-transform: uppercase;
           color: #60606e;
-          padding: 0 5px 0 2px;
-          border: 10px solid #60606e; }
+          font-family: 'Montserrat', sans-serif;
+          border: 10px solid #60606e;
+          padding: 0 5px 0 2px; }
           body .ph-header .container .ph-header-info h1 span {
-            padding: 10px;
             font-size: 18px;
+            position: absolute;
             background-color: #7beec7;
             padding: .5rem 1rem;
             font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
             position: absolute;
             bottom: calc(100% + 10px);
             left: 50%;
@@ -100,11 +102,11 @@ body {
           width: 93%; }
       body .ph-header .container .col h2 {
         font-weight: 700;
-        line-height: 2em;
         text-transform: uppercase;
         color: #60606e;
         position: relative;
-        z-index: 10; }
+        z-index: 10;
+        line-height: 2em; }
         body .ph-header .container .col h2::after {
           content: "";
           position: absolute;
@@ -119,6 +121,8 @@ body {
         line-height: 30px; }
   body .ph-main .main-content {
     padding: 100px 0; }
+    body .ph-main .main-content .col-6 {
+      padding-bottom: 20px; }
   body .ph-main .text-center h2 {
     display: inline-block;
     font-weight: 700;
@@ -162,10 +166,12 @@ body {
       z-index: -1;
       top: 20px;
       left: 0; }
-  body .ph-main section p {
+  body .ph-main .choose-us p {
     color: #60606e;
     font-family: 'Open Sans', sans-serif;
-    line-height: 2em; }
+    line-height: 2em;
+    width: 70%;
+    margin: 0 auto; }
   body .ph-main .portfolio-content {
     padding-top: 100px; }
     body .ph-main .portfolio-content #filter {
@@ -212,10 +218,16 @@ body {
       color: #7beec7;
       background-color: #fff;
       text-transform: uppercase;
-      font-weight: 700; }
+      font-weight: 700;
+      outline: none; }
       body .ph-main .connect .left .btn:hover {
         color: #fff;
         background-color: #60606e; }
+      body .ph-main .connect .left .btn:focus {
+        outline: none; }
+    body .ph-main .connect .right .card {
+      border: none;
+      border-radius: 0; }
     body .ph-main .connect .right .col-9 {
       padding-right: 0; }
     body .ph-main .connect .right .col-3 {
@@ -236,7 +248,9 @@ body {
     body .ph-main .connect .right h3 {
       color: #60606e; }
     body .ph-main .connect .right p {
-      color: #999999; }
+      color: #999999;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 2em; }
     body .ph-main .connect .right form .form-control {
       padding: 10px 5px;
       text-transform: uppercase;
