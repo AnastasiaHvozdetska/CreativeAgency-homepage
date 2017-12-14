@@ -142,6 +142,9 @@ body {
 	.ph-main {
 		.main-content {
 			padding: 100px 0;
+			.col-6 {
+				padding-bottom: 20px;
+			}
 		}
 		.text-center h2 {
 			display: inline-block;
@@ -195,10 +198,12 @@ body {
 					left: 0;
 				}
 		}
-		section p {
+		.choose-us p {
 			color: #60606e;
 			font-family: 'Open Sans', sans-serif;
 			line-height: 2em;
+			width: 70%;
+			margin: 0 auto;
 		}
 		.portfolio-content {
 			padding-top: 100px;
@@ -260,13 +265,21 @@ body {
 					background-color: #fff;
 					text-transform: uppercase;
 					font-weight: 700;
+					outline: none;
 					&:hover {
 						color: #fff;
 						background-color: #60606e;
 					}
+					&:focus {
+						outline: none;
+					}
 				}
 			}
 			.right {
+				.card {
+					border: none;
+					border-radius: 0;
+				}
 				.col-9 {
 					padding-right: 0;
 				}
@@ -293,6 +306,8 @@ body {
 				}
 				p {
 					color: #999999;
+					font-family: 'Open Sans', sans-serif;
+					line-height: 2em;
 				}
 				form .form-control {
 					padding: 10px 5px;
